@@ -13,6 +13,7 @@
 
         .main {
             position: relative;
+
         }
 
         .main_img {
@@ -39,6 +40,16 @@
 
             100% {
                 transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .obj {
+                position: absolute;
+                top: 110px;
+                left: 130px;
+                animation: floating 4s ease-in-out infinite;
+                width: 100px;
             }
         }
     </style>
