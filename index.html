@@ -13,6 +13,8 @@
 
         .main {
             position: relative;
+            width: 100%;
+            overflow: hidden;
 
         }
 
@@ -43,24 +45,50 @@
             }
         }
 
+
+        .mo {
+            display: none;
+        }
+
         @media (max-width: 768px) {
+
+            .mo {
+                display: block;
+            }
+
+            .pc {
+                display: none;
+            }
+
             .obj {
                 position: absolute;
-                top: 110px;
-                left: 130px;
+                top: 8.5%;
+                left: auto;
+                right: 0px;
                 animation: floating 4s ease-in-out infinite;
-                width: 100px;
+                width: 310px;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="main">
-        <img src="./img/obj.png" alt="" class="obj">
-        <img src="./img/oct_01.jpg" alt="" class="main_img">
-        <img src="./img/oct_02.gif" alt="" class="main_img">
-        <img src="./img/oct_03.jpg" alt="" class="main_img">
+    <div class="pc">
+        <div class="main">
+            <img src="./img/obj.png" alt="" class="obj">
+            <img src="./img/oct_01.jpg" alt="" class="main_img">
+            <img src="./img/oct_02.gif" alt="" class="main_img">
+            <img src="./img/oct_03.jpg" alt="" class="main_img">
+        </div>
+    </div>
+
+    <div class="mo">
+        <div class="main">
+            <img src="./img/obj.png" alt="" class="obj">
+            <img src="./img/oct_mo_01.jpg" alt="" class="main_img">
+            <img src="./img/oct_mo_02.gif" alt="" class="main_img">
+            <img src="./img/oct_mo_03.jpg" alt="" class="main_img">
+        </div>
     </div>
 
     <script>
